@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Build a Simple Weather Checker App</title>
+    <!-- Font Awesome CDN JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link CSS & JS Files -->
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="weather-container">
+      <header class="app-header">
+        <h1>Weather Checker</h1>
+        <div class="weather-icon">
+          <span class="icon">
+            <i class="fa-solid fa-cloud-sun-rain"></i>
+          </span>
+        </div>
+      </header>
+      <main>
+        <div class="row">
+          <form action="" class="form" id="city-form" method="POST">
+            <fieldset class="form-group">
+              <label for="city">Enter your city here</label>
+              <input
+                type="text"
+                name="city"
+                id="city"
+                class="form-control"
+                placeholder="e.g. London"
+                required
+              />
+            </fieldset>
+            <button class="btn" type="submit">Check the weather</button>
+          </form>
+        </div>
+        <div class="row">
+          <section id="weather-report" class="weather-report">
+            <div id="city-name"></div>
+            <div id="weather-state"></div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
